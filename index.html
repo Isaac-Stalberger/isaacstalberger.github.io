@@ -1,1 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Stalberger | Portfolio</title>
 
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+
+        nav {
+            background-color: #002a5c;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #003b73;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #002a5c;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+
+        .project h3 {
+            color: #003b73;
+            margin-bottom: 8px;
+        }
+
+        .contact a {
+            color: #003b73;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #002a5c;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            section {
+                margin: 20px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Isaac Stalberger</h1>
+        <h2>Finance Student</h2>
+        <p>University of Utah</p>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Finance major at the University of Utah with an interest in business,
+            financial analysis, and technology. My career interests include finance,
+            business management, and finding ways to use technology to improve
+            organizations. I am especially interested in artificial intelligence and
+            how AI tools can help businesses analyze information, improve decision-making,
+            and make everyday processes more efficient. I am also interested in technical
+            skills such as data analysis, Microsoft Excel, web development, and using
+            digital tools to solve business problems. Through my coursework and projects,
+            I hope to continue developing both my financial knowledge and technical
+            abilities while learning how technology can be applied to real-world business
+            situations.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Microsoft Excel</li>
+            <li>Data Analysis</li>
+            <li>Financial Analysis</li>
+            <li>Business Communication</li>
+            <li>Leadership</li>
+            <li>HTML</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>AI Prompt Engineering</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>AI Business Analysis</h3>
+                <p>
+                    Analyze business information and use AI tools to develop
+                    recommendations and insights.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Data Visualization</h3>
+                <p>
+                    Create charts and visualizations using business and financial
+                    data to communicate important findings.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Web Development</h3>
+                <p>
+                    Develop a responsive personal portfolio website using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Process Improvement</h3>
+                <p>
+                    Explore how AI and technology can improve business workflows
+                    and increase efficiency.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Resume coming soon.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+
+        <p>
+            University Email:
+            <a href="mailto:YOUR_EMAIL@utah.edu">
+                YOUR_EMAIL@utah.edu
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="YOUR_LINKEDIN_URL" target="_blank">
+                LinkedIn Profile
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="YOUR_GITHUB_URL" target="_blank">
+                GitHub Profile
+            </a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Isaac Stalberger. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
